@@ -6,11 +6,22 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class MedunnaLoginPage {
+
     public MedunnaLoginPage() {
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(xpath = "(//*[.='Sign in'])[4]")
-    public WebElement wlcomeToMedunna;
-    @FindBy(linkText = "Items&Titles")
-    public WebElement itemsAndTitles;
+
+    @FindBy(id = "username")
+    public WebElement usernameInput;
+
+    @FindBy(id = "password")
+    public WebElement passwordInput;
+
+    @FindBy(id = "rememberMe")
+    public WebElement rememberMeCheckbox;
+
+    @FindBy(xpath = " //button[@type='submit']")
+    public WebElement signInSubmitButton;
+
+
 }

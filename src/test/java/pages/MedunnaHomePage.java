@@ -6,23 +6,20 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class MedunnaHomePage {
+
     public MedunnaHomePage() {
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(xpath = "//*[@class='d-flex align-items-center dropdown-toggle nav-link']")
-    public WebElement insanSekli;
 
-    @FindBy(xpath = "//*[.='Sign in']")
-    public WebElement signInLink;
+    @FindBy(id = "account-menu")
+    public WebElement userIcon;
 
-    @FindBy(xpath = "//*[@name='username']")
-    public WebElement userName;
+    @FindBy(id = "login-item")
+    public WebElement signInOption;
 
-    @FindBy(xpath = "//*[@name='password']")
-    public WebElement password;
+    @FindBy(id = "entity-menu")
+    public WebElement itemsdAndTitles;
 
-    @FindBy(xpath = "(//*[.='Sign in'])[4]")
-    public WebElement signInButton;
-
-
+    @FindBy(linkText = "Room")
+    public WebElement roomOption;
 }

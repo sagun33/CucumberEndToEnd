@@ -52,7 +52,7 @@ public class RoomCreationStepDefs {
 
         //2. Validation
         JsonPath jsonPath = response.jsonPath();
-        assertEquals((int) expectedData.getRoomNumber(), jsonPath.getInt("roomNumber"));
+        assertEquals((int)expectedData.getRoomNumber(), jsonPath.getInt("roomNumber"));
         assertEquals(expectedData.getRoomType(), jsonPath.getString("roomType"));
         assertEquals(expectedData.getStatus(), jsonPath.getBoolean("status"));
         assertEquals((int) expectedData.getPrice(), jsonPath.getInt("price"));

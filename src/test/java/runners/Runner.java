@@ -9,9 +9,9 @@ import org.junit.runner.RunWith;
 
         features="src/test/resources/features",
         glue= {"stepdefinitions", "hooks"},
-        tags="@amazon_search"  ,
+        tags="@US05"  ,
 
-        dryRun= false
+        dryRun= true
 
 )
 
