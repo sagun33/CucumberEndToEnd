@@ -19,7 +19,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertEquals;
 
 
-public class RoomCreationStepDefs {
+public class gRoomCreationStepDefs {
     Response response;
     int roomNumber = Faker.instance().number().numberBetween(1000, 1000000);
     Room expectedData;
